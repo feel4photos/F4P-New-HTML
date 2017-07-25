@@ -1,0 +1,18 @@
+// F4P menu partial
+
+.c-menu {
+
+}
+
+.c-footer__nav {
+    background-color: $transparent;
+    height: auto;
+    line-height: inherit;
+    overflow: hidden;
+    width: auto;
+    ul {
+        a {
+            padding: 0;
+        }
+    }
+}

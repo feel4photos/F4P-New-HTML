@@ -3,7 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Feel4photos</title>
+    <!-- <title>Feel4photos</title> -->
+    <title>Untitled</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -20,7 +21,7 @@
                         <img src="" alt="" class="c-about__logo">
                     </div><!-- / large logo about us are -->
                     <div class="col s12 l8">
-                        <div class="card">
+                        <div class="card white-text">
                             <div class="card-content">
                                 <h2 class="card-title c-about__title c-title">About Us</h2>
                                 <div class="c-about__desc">
@@ -43,16 +44,16 @@
                 </section><!-- / portfolio slider -->
             </section><!-- / gm fixed width container -->
         </section><!-- / portfolio -->
-        <section class="o-hlight c-hcontact u-height100 valign-wrapper">
+        <section class="o-hlight c-hcontact u-height100 valign-wrapper white-text">
             <section class="container">
                 <h2 class="c-hcontact__title">
                     hummm... interested?
                     say <strong>Hello ...</strong>
                 </h2>
                 <ul class="c-hcontact__tel">
-                    <li><a href="tel:9830027039">9830027039</a></li>
-                    <li><a href="tel:7044443318">7044443318</a></li>
-                    <li><a href="tel:7001364979">7001364979</a></li>
+                    <li><a href="tel:9830027039" class="u-linkbase">9830027039</a></li>
+                    <li><a href="tel:7044443318" class="u-linkbase">7044443318</a></li>
+                    <li><a href="tel:7001364979" class="u-linkbase">7001364979</a></li>
                 </ul>
             </section><!-- / gm fixed width container -->
         </section><!-- / contact -->
@@ -94,40 +95,51 @@
                     </div>
                     <div class="col s12 l8">
                         <form name="" id="" method="post" action="">
-                            <input type="email" name="" id="" placeholder="Your email id">
-                            <input type="submit" name="" value="Submit">
+                            <div class="input-field">
+                                <input type="email" name="email" id="email" placeholder="Your email id" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                            <input type="submit" name="" value="Submit" class="c-btn c-btn--nobg c-btn--border c-btn--borderadius u-uppercase">
                         </form>
                     </div>
                 </div>
             </section><!-- / gm fixed width container -->
         </section><!-- / newsletter subscription -->
     </section><!-- / main content area -->
-    <footer class="o-footer c-footer u-height100 valign-wrapper">
+    <footer class="o-dark c-footer u-height100 valign-wrapper">
         <section class="container">
             <div class="c-footer__logo"></div><!-- / footer logo -->
-            <div class="c-footer__email">
+            <div class="c-footer__email u-linkhlight">
                 <a href="mailto:contact@feel4photos.com" title="contact@feel4photos.com">contact@feel4photos.com</a>
             </div><!-- / footer email -->
             <div class="c-footer__tel">
-                <p><a href="tel:9830027039">9830027039</a></p>
-                <p><a href="tel:7044443318">7044443318</a></p>
-                <p><a href="tel:7001364979">7001364979</a></p>
+                <p class="u-linkhlight"><a href="tel:9830027039">9830027039</a></p>
+                <p class="u-linkhlight"><a href="tel:7044443318">7044443318</a></p>
+                <p class="u-linkhlight"><a href="tel:7001364979">7001364979</a></p>
             </div><!-- / footer tel -->
-            <div class="c-footer__nav">
+            <nav class="c-menu c-footer__nav u-uppercase">
                 <ul>
-                    <li><a href="javascript:void(0);">Home</a></li>
-                    <li><a href="javascript:void(0);">About Us</a></li>
-                    <li><a href="javascript:void(0);">Portfolio</a></li>
-                    <li><a href="javascript:void(0);">Contact</a></li>
+                    <li class="u-linkbase"><a href="javascript:void(0);">Home</a></li>
+                    <li class="u-linkbase"><a href="javascript:void(0);">About Us</a></li>
+                    <li class="u-linkbase"><a href="javascript:void(0);">Portfolio</a></li>
+                    <li class="u-linkbase"><a href="javascript:void(0);">Contact</a></li>
                 </ul>
-            </div><!-- / footer navigation -->
-            <div class="c-footer__copyright">
+            </nav><!-- / footer navigation -->
+            <div class="c-footer__copyright u-uppercase">
                 <p>copyright &copy; 2017 feel4photos</p>
             </div><!-- / footer copyright -->
             <div class="c-footer__social">
-
+                <a href="javascript:void(0);" class="u-linkbase"><i class="material-icons">facebook</i></a>
+                <a href="javascript:void(0);" class="u-linkbase"><i class="material-icons">add</i></a>
+                <a href="javascript:void(0);" class="u-linkbase"><i class="material-icons">add</i></a>
             </div><!-- / footer social links -->
         </section><!-- / gm fixed width container -->
     </footer><!-- / footer -->
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+    <script src="js/materialize.js"></script>
 </body>
 </html>

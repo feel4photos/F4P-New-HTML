@@ -289,3 +289,28 @@ button.btn-floating {
 .btn-block {
   display: block;
 }
+
+
+// F4P buttons
+
+// F4P flat buttons
+.c-btn {
+  color: $f4p-base-color;
+  height: $f4p-button-height;
+  line-height: $f4p-button-lineheight;
+  outline: none;
+  padding: $f4p-button-padding;
+}
+.c-btn--noborder {
+  border: none;
+}
+.c-btn--border {
+  border: $button-radius solid $f4p-base-color;
+}
+.c-btn--borderadius {
+  @include roundedCorners(50);
+}
+.c-btn--nobg {
+  background-color: $transparent;
+}
+

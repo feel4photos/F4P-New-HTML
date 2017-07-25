@@ -2,10 +2,50 @@
 
 // highlight color area
 .o-hlight {
-    background-color: $hlight-tone;
+    background-color: $f4p-hlight-tone;
+}
+
+// dark color area
+.o-dark {
+    background-color: $f4p-dark-tone;
+}
+
+// link color
+.u-linkhlight {
+    color: $f4p-hlight-tone;
+    a {
+        @extend .u-linkhlight;
+    }
+}
+.u-linkbase {
+    color: $f4p-base-color;
+    a {
+        @extend .u-linkbase;
+    }
 }
 
 // height 100%
-.u-height100{
+.u-height100 {
     height: 100vh;
 }
+
+// card element
+.card {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    .card-content {
+        padding: 0;
+    }
+    .card-action {
+        border-top: none;
+    }
+}
+
+// text transform
+.u-uppercase {
+    text-transform: uppercase;
+}
+
+

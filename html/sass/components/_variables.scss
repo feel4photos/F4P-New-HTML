@@ -43,6 +43,12 @@ $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 
+$f4p-base-color: color("f4p", "base-color") !default;
+$f4p-dark-tone: color("f4p", "dark-tone") !default;
+$f4p-hlight-tone: color("f4p", "hlight-tone") !default;
+
+$transparent: color("shades", "transparent") !default;
+
 
 // 2. Badges
 // ==========================================================================
@@ -62,6 +68,10 @@ $button-icon-font-size: 1.3rem !default;
 $button-height: 36px !default;
 $button-padding: 0 2rem !default;
 $button-radius: 2px !default;
+
+$f4p-button-height: 55px !default;
+$f4p-button-lineheight: $f4p-button-height;
+$f4p-button-padding: 0 3.5rem !default;
 
 // Disabled styles
 $button-disabled-background: #DFDFDF !default;
