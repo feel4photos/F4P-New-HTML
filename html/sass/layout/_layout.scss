@@ -10,6 +10,11 @@
     background-color: $f4p-dark-tone;
 }
 
+// overlay area
+.o-overlay--05 {
+    background-color: rgba(0,0,0,0.5);
+}
+
 // link color
 .u-linkhlight {
     color: $f4p-hlight-tone;
@@ -24,9 +29,20 @@
     }
 }
 
+// text color
+.u-txtgrey {
+    color: $f4p-grey-color;
+}
+
 // height 100%
 .u-height100 {
-    height: 100vh;
+    height: $f4p-grid-height-100;
+    padding: 50px 0;
+}
+
+// width
+.u-width80 {
+    width: $f4p-grid-width-100 / 1.14;
 }
 
 // card element
@@ -47,5 +63,9 @@
 .u-uppercase {
     text-transform: uppercase;
 }
+.u-capitalize {
+    text-transform: capitalize;
+}
+
 
 

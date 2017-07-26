@@ -6,7 +6,6 @@
     <!-- <title>Feel4photos</title> -->
     <title>Untitled</title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -14,7 +13,7 @@
         <section></section>
     </header><!-- / header -->
     <section class="o-content c-content">
-        <section class="o-hlight c-about u-height100 valign-wrapper">
+        <section class="o-hlight c-about u-height100">
             <section class="container">
                 <div class="row">
                     <div class="col s12 l4">
@@ -22,8 +21,8 @@
                     </div><!-- / large logo about us are -->
                     <div class="col s12 l8">
                         <div class="card white-text">
-                            <div class="card-content">
-                                <h2 class="card-title c-about__title c-title">About Us</h2>
+                            <div class="card-content u-width80">
+                                <h2 class="card-title c-about__title c-title c-title--border-bottom c-title--border-base-color u-uppercase u-no-topmargin">About Us</h2>
                                 <div class="c-about__desc">
                                     <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
                                 </div>
@@ -46,7 +45,7 @@
         </section><!-- / portfolio -->
         <section class="o-hlight c-hcontact u-height100 valign-wrapper white-text">
             <section class="container">
-                <h2 class="c-hcontact__title">
+                <h2 class="c-hcontact__title c-title c-title--border-bottom c-title--border-base-color">
                     hummm... interested?
                     say <strong>Hello ...</strong>
                 </h2>
@@ -57,29 +56,30 @@
                 </ul>
             </section><!-- / gm fixed width container -->
         </section><!-- / contact -->
-        <section class="o-hblog c-hblog u-height100">
-            <section class="c-hblog__featureimg">
-                <section class="container">
-                    <div class="row">
-                        <div class="col s12 l8">
-                            <div class="card">
-                                <div class="card-content">
-                                    <h2 class="card-title c-hblog__title">
-                                        <span>Our Fashion</span>
-                                        Concepts
-                                    </h2>
-                                    <div class="c-hblog__desc">
-                                        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-                                    </div>
-                                </div>
-                                <div class="card-action">
-                                    <a href="javascript:void(0);" title="More" class="c-hblog__mlink">More</a>
+        <section class="o-overlay--05 c-hblog u-height100 white-text parallax-container">
+            <section class="container">
+                <div class="row">
+                    <div class="col s12 l8">
+                        <div class="card">
+                            <div class="card-content u-width80">
+                                <h2 class="card-title c-title c-title--border-bottom c-title--border-hlight-color c-hblog__title u-uppercase u-no-topmargin">
+                                    <span class="u-capitalize">Our Fashion</span>
+                                    Concepts
+                                </h2>
+                                <div class="c-hblog__desc">
+                                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
                                 </div>
                             </div>
+                            <div class="card-action">
+                                <a href="javascript:void(0);" title="More" class="c-hblog__mlink">More</a>
+                            </div>
                         </div>
-                        <div class="col s12 l4"></div>
                     </div>
-                </section><!-- / gm fixed width container -->
+                    <div class="col s12 l4"></div>
+                </div>
+            </section><!-- / gm fixed width container -->
+            <section class="c-hblog__featureimg parallax">
+                <img src="images/blog-bg.jpg">
             </section><!-- / feature image holder -->
         </section><!-- / blog in home page -->
         <section class="o-clients c-clients u-height100">
@@ -87,16 +87,16 @@
 
             </section><!-- / gm fixed width container -->
         </section><!-- / clients -->
-        <section class="o-hlight c-newsletter u-height100 valign-wrapper">
+        <section class="o-hlight c-newsletter u-height100 valign-wrapper white-text">
             <section class="container">
                 <div class="row">
-                    <div class="col s12 l4">
+                    <div class="col s12 l4 hide-on-med-and-down">
                         Newsletter
                     </div>
                     <div class="col s12 l8">
                         <form name="" id="" method="post" action="">
                             <div class="input-field">
-                                <input type="email" name="email" id="email" placeholder="Your email id" class="validate">
+                                <input type="email" name="email" id="email" class="validate">
                                 <label for="email">Email</label>
                             </div>
                             <input type="submit" name="" value="Submit" class="c-btn c-btn--nobg c-btn--border c-btn--borderadius u-uppercase">
@@ -125,21 +125,20 @@
                     <li class="u-linkbase"><a href="javascript:void(0);">Contact</a></li>
                 </ul>
             </nav><!-- / footer navigation -->
-            <div class="c-footer__copyright u-uppercase">
+            <div class="c-footer__copyright u-uppercase u-txtgrey">
                 <p>copyright &copy; 2017 feel4photos</p>
             </div><!-- / footer copyright -->
             <div class="c-footer__social">
-                <a href="javascript:void(0);" class="u-linkbase"><i class="material-icons">facebook</i></a>
-                <a href="javascript:void(0);" class="u-linkbase"><i class="material-icons">add</i></a>
-                <a href="javascript:void(0);" class="u-linkbase"><i class="material-icons">add</i></a>
+                <a href="javascript:void(0);" class="u-linkbase social facebook"><i class="fa fa-facebook"></i></a>
+                <a href="javascript:void(0);" class="u-linkbase social twitter"><i class="fa fa-twitter"></i></a>
+                <a href="javascript:void(0);" class="u-linkbase social instagram"><i class="fa fa-instagram"></i></a>
             </div><!-- / footer social links -->
         </section><!-- / gm fixed width container -->
     </footer><!-- / footer -->
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-    crossorigin="anonymous"></script>
-    <script src="js/materialize.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

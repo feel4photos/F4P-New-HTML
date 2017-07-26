@@ -308,7 +308,7 @@ button.btn-floating {
   border: $button-radius solid $f4p-base-color;
 }
 .c-btn--borderadius {
-  @include roundedCorners(50);
+  @include border-radius(50px);
 }
 .c-btn--nobg {
   background-color: $transparent;

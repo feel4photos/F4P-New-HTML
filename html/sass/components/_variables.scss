@@ -47,6 +47,8 @@ $f4p-base-color: color("f4p", "base-color") !default;
 $f4p-dark-tone: color("f4p", "dark-tone") !default;
 $f4p-hlight-tone: color("f4p", "hlight-tone") !default;
 
+$f4p-grey-color: color("grey", "darken-2") !default;
+
 $transparent: color("shades", "transparent") !default;
 
 
@@ -232,6 +234,9 @@ $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
+
+$f4p-grid-height-100: 100vh !default;
+$f4p-grid-width-100: 100% !default;
 
 
 // 13. Navigation Bar

@@ -1,0 +1,41 @@
+// F4P titles partial
+
+// titles
+.c-title {
+    position: relative;
+    &.c-title--border-bottom {
+        margin-bottom: 40px !important;
+        padding-bottom: 5px;
+        &:after {
+            bottom: 0;
+            display: block;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            width: 60px;
+        }
+    }
+    &.c-title--border-bottom-middle {
+
+    }
+    &.c-title--border-top {
+        @extend .c-title--border-bottom;
+        padding: 5px 0 0;
+        &:after {
+            top: 0;
+        }
+    }
+    &.c-title--border-base-color {
+        &:after {
+            background-color: $f4p-base-color;
+        }
+    }
+    &.c-title--border-hlight-color {
+        &:after {
+            background-color: $f4p-hlight-tone;
+        }
+    }
+    span {
+        display: block;
+    }
+}

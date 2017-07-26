@@ -7,10 +7,15 @@ html {
  box-sizing: inherit;
 }
 
+*:before, *:after {
+  content: "";
+}
+
 body {
   // display: flex;
   // min-height: 100vh;
   // flex-direction: column;
+  letter-spacing: 1px;
 }
 
 main {
@@ -737,4 +742,7 @@ td, th{
 
 .no-padding {
   padding: 0 !important;
+}
+.u-no-topmargin {
+  margin-top: 0;
 }
