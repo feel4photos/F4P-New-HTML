@@ -1,0 +1,38 @@
+// slider partial
+
+.c-slider {
+
+}
+
+.banner-slider{
+    height: 100%;
+    .slick-next{
+        right:60px;
+        z-index: 5;
+    }
+    .slick-prev{
+        left: 60px;
+        z-index: 5;
+    }
+    .slick-list{
+        height: 100%;
+    }
+    .slick-track{
+        @extend .slick-list;
+    }
+    .slick-dots{
+        bottom: 30px;
+    }
+}
+
+.hbanner-slider{
+    &.slick-dotted{
+        margin-bottom: 0;
+    }
+    .slick-dots{
+        bottom: 30px;
+        left: 60px;
+        text-align: left;
+        width: auto;
+    }
+}

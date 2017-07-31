@@ -71,5 +71,39 @@
     text-transform: capitalize;
 }
 
+// background image styles
+
+// cover / content
+.u-bg-cover {
+    background-size: cover;
+}
+.u-bg-content {
+    background-size: content;
+}
+
+// positions
+.u-bg-pos-center-middle {
+    background-position: 50% 50%;
+}
+
+// repeatation
+.u-bg-norepeat {
+    background-repeat: no-repeat;
+}
+.u-bg-repeat-x {
+    background-repeat: repeat-x;
+}
+.u-bg-repeat-y {
+    background-repeat: repeat-y;
+}
+.u-bg-repeat-xy {
+    background-repeat: repeat;
+}
+
+// fixed
+.u-bg-fixed {
+    background-attachment: fixed;
+}
+
 
 
