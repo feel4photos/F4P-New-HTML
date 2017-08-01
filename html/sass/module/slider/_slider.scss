@@ -1,38 +1,22 @@
 // slider partial
 
 .c-slider {
-
-}
-
-.banner-slider{
-    height: 100%;
-    .slick-next{
-        right:60px;
+    .slick-arrow {
         z-index: 5;
+    }
+    .slick-next{
+        right:40px;
     }
     .slick-prev{
-        left: 60px;
-        z-index: 5;
+        left: 40px;
     }
     .slick-list{
-        height: 100%;
+        height: $f4p-grid-height-100;
     }
     .slick-track{
         @extend .slick-list;
     }
     .slick-dots{
-        bottom: 30px;
-    }
-}
-
-.hbanner-slider{
-    &.slick-dotted{
-        margin-bottom: 0;
-    }
-    .slick-dots{
-        bottom: 30px;
-        left: 60px;
-        text-align: left;
-        width: auto;
+        bottom: 0;
     }
 }

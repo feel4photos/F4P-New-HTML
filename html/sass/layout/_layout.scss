@@ -46,17 +46,17 @@
 
 // padding
 .u-topbottom-pad-50 {
-    padding: 50px 0;
+    padding: $all-zero + 50 $all-zero;
 }
 
 // card element
 .card {
     background-color: transparent;
-    border-radius: 0;
+    border-radius: $all-zero;
     box-shadow: none;
-    margin: 0;
+    margin: $all-zero;
     .card-content {
-        padding: 0;
+        padding: $all-zero;
     }
     .card-action {
         border-top: none;
@@ -83,7 +83,7 @@
 
 // positions
 .u-bg-pos-center-middle {
-    background-position: 50% 50%;
+    background-position: $f4p-grid-width-100 / 2 $f4p-grid-width-100 / 2;
 }
 
 // repeatation
@@ -103,6 +103,50 @@
 // fixed
 .u-bg-fixed {
     background-attachment: fixed;
+}
+
+
+// transform / translate
+.u-translate-x50 {
+    left: $f4p-grid-width-100 / 2;
+    @include translateX(-$f4p-grid-width-100 /2);
+}
+.u-translate-y50 {
+    top: $f4p-grid-width-100 / 2;
+    @include translateY(-$f4p-grid-width-100 /2);
+}
+.u-translate-50 {
+    @extend .u-translate-x50;
+    @extend .u-translate-y50;
+    @include translate(-$f4p-grid-width-100 /2, -$f4p-grid-width-100/2);
+}
+
+
+
+// position
+.u-absolute {
+    position: absolute;
+    &.u-top-0 {
+        top: $all-zero;
+    }
+    &.u-bot-0 {
+        bottom: $all-zero;
+    }
+    &.u-left-0 {
+        left: $all-zero;
+    }
+    &.u-right-0 {
+        right: $all-zero;
+    }
+    &.u-all-0 {
+        @extend .u-bot-0;
+        @extend .u-left-0;
+        @extend .u-right-0;
+        @extend .u-top-0;
+    }
+}
+.u-relative {
+    position: relative;
 }
 
 

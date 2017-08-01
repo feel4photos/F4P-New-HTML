@@ -4,7 +4,7 @@
 
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
-    $(".banner-slider").slick({
+    $(".c-slider").slick({
         dots: true,
         dotsClass: 'slick-dots',
         autoplay: true,

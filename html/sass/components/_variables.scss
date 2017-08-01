@@ -28,6 +28,7 @@
 //  22. Flow Text
 //  23. Collections
 //  24. Progress Bar
+//  25. Variable for 0
 
 
 
@@ -345,3 +346,9 @@ $collection-line-height: 1.5rem !default;
 // ==========================================================================
 
 $progress-bar-color: $secondary-color !default;
+
+
+// 25. Variable for 0 value
+// ==========================================================================
+
+$all-zero: 0px;
