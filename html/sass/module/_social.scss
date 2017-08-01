@@ -1,6 +1,7 @@
 // F4P social partial
 
 .c-social {
+    z-index: 5;
     &.c-social--bottom {
         bottom: $all-zero + 90;
     }
