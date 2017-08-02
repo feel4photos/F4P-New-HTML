@@ -1,4 +1,12 @@
 
+var swiper = new Swiper('.swiper-container', {
+    zoom: true,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
+});
+
+
 (function($){
   $(function(){
 

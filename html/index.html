@@ -69,15 +69,34 @@
                 </div>
             </section><!-- / gm fixed width container -->
         </section><!-- / about -->
-        <section class="o-portfolio c-portfolio u-height100 u-topbottom-pad-50">
-            <section class="container">
-                <h2 class="c-portfolio__title">Portfolio</h2>
-                <section class="carousel u-height100-" data-indicators="true">
-                    hello
-                    <a class="carousel-item" href="#one!"><img src="images/background1.jpg"></a>
-                    <a class="carousel-item" href="#two!"><img src="images/background2.jpg"></a>
-                    <a class="carousel-item" href="#three!"><img src="images/blog-bg.jpg"></a>
-                    <a class="carousel-item" href="#four!"><img src="images/blog-bg2.jpg"></a>
+        <section class="o-portfolio c-portfolio u-height100 u-topbottom-pad-50- u-relative">
+            <section class="u-width100">
+                <section class="container u-absolute u-left-0 u-right-0 u-bot-0">
+                    <h2 class="c-portfolio__title c-title u-no-margin white-text c-title--border-top c-title--border-hlight-color u-uppercase">Portfolio</h2>
+                </section>
+                <section class="swiper-container u-width100 u-height100">
+                    <article class="swiper-wrapper">
+                        <div class="swiper-slide u-oflowhidden">
+                            <div class="swiper-zoom-container">
+                                <img src="images/blog-bg.jpg" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle">
+                            </div>
+                        </div>
+                        <div class="swiper-slide u-oflowhidden">
+                            <div class="swiper-zoom-container">
+                                <img src="images/blog-bg2.jpg" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle">
+                            </div>
+                        </div>
+                        <div class="swiper-slide u-oflowhidden">
+                            <div class="swiper-zoom-container">
+                                <img src="images/background1.jpg" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle">
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white u-absolute u-top-0 u-left-0 left-align"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </section><!-- / portfolio slider -->
             </section><!-- / gm fixed width container -->
         </section><!-- / portfolio -->
@@ -178,6 +197,7 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>

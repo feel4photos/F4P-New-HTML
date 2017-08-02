@@ -4,15 +4,15 @@
 .c-title {
     position: relative;
     &.c-title--border-bottom {
-        margin-bottom: 40px !important;
-        padding-bottom: 5px;
+        margin-bottom: $all-zero + 30 !important;
+        padding-bottom: $all-zero + 5;
         &:after {
-            bottom: 0;
+            bottom: $all-zero;
             display: block;
-            height: 2px;
-            left: 0;
+            height: $all-zero + 2;
+            left: $all-zero;
             position: absolute;
-            width: 60px;
+            width: $all-zero + 60;
         }
     }
     &.c-title--border-bottom-middle {
@@ -20,9 +20,9 @@
     }
     &.c-title--border-top {
         @extend .c-title--border-bottom;
-        padding: 5px 0 0;
+        padding: $all-zero + 5 $all-zero $all-zero;
         &:after {
-            top: 0;
+            top: $all-zero;
         }
     }
     &.c-title--border-base-color {
@@ -37,5 +37,9 @@
     }
     span {
         display: block;
+    }
+    &.c-portfolio__title {
+        margin-bottom: $all-zero !important;
+        z-index: 10;
     }
 }

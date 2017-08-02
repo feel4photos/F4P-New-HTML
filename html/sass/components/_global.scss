@@ -741,11 +741,14 @@ td, th{
 }
 
 .no-padding {
-  padding: 0 !important;
+  padding: $all-zero !important;
+}
+.u-no-margin {
+  margin: $all-zero !important;
 }
 .u-no-topmargin {
-  margin-top: 0;
+  margin-top: $all-zero !important;
 }
 .u-no-botmargin {
-  margin-bottom: 0 !important;
+  margin-bottom: $all-zero !important;
 }
