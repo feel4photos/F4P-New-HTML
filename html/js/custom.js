@@ -1,9 +1,18 @@
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper1', {
     zoom: true,
-    pagination: '.swiper-pagination',
+    pagination: '.swiper-pagination1',
     nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev'
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+});
+var swiper2 = new Swiper('.swiper2', {
+    zoom: true,
+    pagination: '.swiper-pagination2',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    slidesPerView: 2,
 });
 
 

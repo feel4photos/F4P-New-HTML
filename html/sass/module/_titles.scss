@@ -4,7 +4,7 @@
 .c-title {
     position: relative;
     &.c-title--border-bottom {
-        margin-bottom: $all-zero + 30 !important;
+        margin-bottom: $all-zero + 30;
         padding-bottom: $all-zero + 5;
         &:after {
             bottom: $all-zero;
@@ -39,7 +39,6 @@
         display: block;
     }
     &.c-portfolio__title {
-        margin-bottom: $all-zero !important;
         z-index: 10;
     }
 }
