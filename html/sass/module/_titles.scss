@@ -41,4 +41,7 @@
     &.c-portfolio__title {
         z-index: 10;
     }
+    &.c-clients__title {
+        @extend .c-portfolio__title;
+    }
 }

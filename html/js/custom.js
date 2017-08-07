@@ -7,7 +7,7 @@ var swiper = new Swiper('.swiper1', {
     paginationClickable: true,
 });
 var swiper2 = new Swiper('.swiper2', {
-    zoom: true,
+    //zoom: true,
     pagination: '.swiper-pagination2',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
