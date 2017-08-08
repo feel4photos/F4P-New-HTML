@@ -41,6 +41,7 @@
 
 // width
 .u-width100 {
+    max-width: $f4p-grid-width-100;
     width: $f4p-grid-width-100;
 }
 .u-width80 {
@@ -50,6 +51,11 @@
 // padding
 .u-topbottom-pad-50 {
     padding: $all-zero + 50 $all-zero;
+}
+
+// margin
+.u-margin-0auto {
+    margin: $all-zero auto !important;
 }
 
 // card element
