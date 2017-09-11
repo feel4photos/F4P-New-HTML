@@ -52,6 +52,12 @@
 .u-topbottom-pad-50 {
     padding: $all-zero + 50 $all-zero;
 }
+.u-left-pad {
+    padding-left: $all-zero + 30;
+}
+.u-right-pad {
+    padding-right: $all-zero + 30;
+}
 
 // margin
 .u-margin-0auto {
