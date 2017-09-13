@@ -12,7 +12,7 @@
 //  6. Chips
 //  7. Date + Time Picker
 //  8. Dropdown
-//  9. Fonts
+//  9. Fonts Path & Fonts
 //  10. Forms
 //  11. Global
 //  12. Grid
@@ -155,10 +155,13 @@ $dropdown-color: $secondary-color !default;
 $dropdown-item-height: 50px !default;
 
 
-// 9. Fonts
+// 9. Fonts Path & Fonts
 // ==========================================================================
 
 $roboto-font-path: "../fonts/roboto/" !default;
+$bauhaus-font-path: "../fonts/bauhaus/" !default;
+
+$bauhaus-font-family: "Bauhaus Lt BT";
 
 
 // 10. Forms
