@@ -1,13 +1,4 @@
 @font-face {
-    font-family: "Roboto";
-    src: local(Roboto Thin),
-        url("#{$roboto-font-path}Roboto-Thin.woff2") format("woff2"),
-        url("#{$roboto-font-path}Roboto-Thin.woff") format("woff");
-
-    font-weight: 100;
-}
-
-@font-face {
     font-family: $bauhaus-font-family;
     src: url('#{$bauhaus-font-path}BauhausITCbyBT-Light.eot');
     src: local('Bauhaus Light BT'), local('BauhausITCbyBT-Light'),
