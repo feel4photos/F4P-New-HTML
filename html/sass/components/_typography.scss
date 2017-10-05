@@ -31,6 +31,15 @@ h1, h2, h3, h4, h5, h6 {
 // Header Styles
 h1, h2, h3, h4, h5, h6 { font-family: $gotham-font-family; font-weight: bold; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+
+// Header Styles
+$h1-fontsize: $all-zero + 28 !default;
+$h2-fontsize: $all-zero + 24 !default;
+$h3-fontsize: $all-zero + 20 !default;
+$h4-fontsize: $all-zero + 18 !default;
+$h5-fontsize: $all-zero + 16 !default;
+$h6-fontsize: $all-zero + 14 !default;
+
 h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
 h2 { font-size: $h2-fontsize; line-height: 110%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
 h3 { font-size: $h3-fontsize; line-height: 110%; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;}
@@ -44,6 +53,10 @@ strong { font-weight: 500; }
 small { font-size: 75%; }
 .light { font-weight: 300; }
 .thin { font-weight: 200; }
+
+p {
+    margin-bottom: $all-zero + 20;
+}
 
 
 .flow-text{
@@ -60,4 +73,12 @@ small { font-size: 75%; }
   @media only screen and (max-width: 360px) {
     font-size: 1.2rem;
   }
+}
+
+// Single page Quoted text
+.u-quotetxt {
+    font-family: $timesnwroman-font-family;
+    font-size: $all-zero + 20;
+    line-height: $all-zero + 26;
+    padding-bottom: $all-zero + 10 !important;
 }
