@@ -15,14 +15,18 @@
             width: $all-zero + 60;
         }
     }
-    &.c-title--border-bottom-middle {
-
-    }
     &.c-title--border-top {
         @extend .c-title--border-bottom;
         padding: $all-zero + 5 $all-zero $all-zero;
         &:after {
             top: $all-zero;
+        }
+    }
+    &.c-title--border-middle {
+        @extend .c-title--border-bottom;
+        &:after {
+            left: $f4p-grid-width-100 / 2;
+            @include translateX(-$f4p-grid-width-100 /2);
         }
     }
     &.c-title--border-base-color {
@@ -44,4 +48,18 @@
     &.c-clients__title {
         @extend .c-portfolio__title;
     }
+}
+
+
+.c-title--banner {
+    span {
+        letter-spacing: $all-zero + 4;
+        margin-top: $all-zero + 20;
+        padding-top: $all-zero + 20 !important;
+    }
+}
+
+.c-crisp-title {
+    font-family: $srcsanspro-font-family;
+    font-weight: 100;
 }

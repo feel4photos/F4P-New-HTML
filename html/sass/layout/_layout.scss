@@ -78,12 +78,15 @@
     }
 }
 
-// text transform
+// text transform / font variant
 .u-uppercase {
     text-transform: uppercase;
 }
 .u-capitalize {
     text-transform: capitalize;
+}
+.u-smallcaps {
+    font-variant: small-caps;
 }
 
 // background image styles

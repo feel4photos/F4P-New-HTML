@@ -12,7 +12,22 @@
     width: auto;
     ul {
         a {
-            padding: 0;
+            padding: $all-zero;
+        }
+    }
+    li {
+        margin-bottom: $all-zero + 4;
+        padding-right: $all-zero + 25;
+        position: relative;
+        &:before {
+            content: "\002f";
+            position: absolute;
+            right: $all-zero + 10;
+        }
+        &:last-child {
+            &:before {
+                display: none;
+            }
         }
     }
 }

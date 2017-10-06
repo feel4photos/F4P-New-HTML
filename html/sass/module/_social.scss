@@ -2,6 +2,13 @@
 
 .c-social {
     z-index: 5;
+    a {
+        font-size: $all-zero + 18;
+        margin-right: $all-zero + 15;
+        &:last-child {
+            margin-right: $all-zero;
+        }
+    }
     &.c-social--bottom {
         bottom: $all-zero + 90;
     }

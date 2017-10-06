@@ -78,7 +78,12 @@ p {
 // Single page Quoted text
 .u-quotetxt {
     font-family: $timesnwroman-font-family;
+    padding-bottom: $all-zero + 10 !important;
+}
+.u-largetxt {
     font-size: $all-zero + 20;
     line-height: $all-zero + 26;
-    padding-bottom: $all-zero + 10 !important;
+}
+.u-smallertxt {
+    font-size: $all-zero + 14;
 }
