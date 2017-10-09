@@ -4,15 +4,15 @@
 .c-title {
     position: relative;
     &.c-title--border-bottom {
-        margin-bottom: $all-zero + 30;
-        padding-bottom: $all-zero + 5;
+        margin-bottom: $all-zero + 25;
+        padding-bottom: $all-zero + 25;
         &:after {
             bottom: $all-zero;
             display: block;
             height: $all-zero + 2;
             left: $all-zero;
             position: absolute;
-            width: $all-zero + 60;
+            width: $all-zero + 40;
         }
     }
     &.c-title--border-top {
@@ -41,6 +41,7 @@
     }
     span {
         display: block;
+        font-weight: 100;
     }
     &.c-portfolio__title {
         z-index: 10;
@@ -48,13 +49,16 @@
     &.c-clients__title {
         @extend .c-portfolio__title;
     }
+    &.c-title--type3 {
+
+    }
 }
 
 
 .c-title--banner {
     span {
         letter-spacing: $all-zero + 4;
-        margin-top: $all-zero + 20;
+        margin-top: $all-zero + 23;
         padding-top: $all-zero + 20 !important;
     }
 }
@@ -63,3 +67,5 @@
     font-family: $srcsanspro-font-family;
     font-weight: 100;
 }
+
+

@@ -12,4 +12,10 @@
     &.c-social--bottom {
         bottom: $all-zero + 90;
     }
+    &.c-social--bloglist {
+        margin-top: $all-zero + 20;
+        a {
+            color: $f4p-grey-tone-l1;
+        }
+    }
 }

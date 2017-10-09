@@ -1,8 +1,6 @@
 // F4P footer partial
 
 footer {
-    font-family: $bauhaus-font-family;
-
     p {
         margin: $all-zero;
     }
@@ -13,5 +11,6 @@ footer {
 }
 
 .c-footer__copyright {
+    font-size: $all-zero + 12;
     margin: $all-zero + 15 $all-zero;
 }

@@ -80,10 +80,16 @@ p {
     font-family: $timesnwroman-font-family;
     padding-bottom: $all-zero + 10 !important;
 }
+// Single page Large text
 .u-largetxt {
     font-size: $all-zero + 20;
     line-height: $all-zero + 26;
 }
+// Sub Titles
 .u-smallertxt {
     font-size: $all-zero + 14;
+}
+.u-bauhaus-ffamily {
+    font-family: $bauhaus-font-family;
+    letter-spacing: $all-zero + 2;
 }
