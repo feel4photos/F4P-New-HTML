@@ -16,6 +16,9 @@
         margin-top: $all-zero + 20;
         a {
             color: $f4p-grey-tone-l1;
+            &:hover {
+                color: $f4p-grey-color;
+            }
         }
     }
 }

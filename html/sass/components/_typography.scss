@@ -75,12 +75,19 @@ p {
   }
 }
 
-// Single page Quoted text
+// Quoted text
 .u-quotetxt {
     font-family: $timesnwroman-font-family;
     padding-bottom: $all-zero + 10 !important;
 }
-// Single page Large text
+// Larger text
+.u-exlargetxt {
+    font-size: $all-zero + 30;
+    font-weight: 600;
+    letter-spacing: $all-zero + 3;
+    line-height: $all-zero + 36;
+}
+// Large text
 .u-largetxt {
     font-size: $all-zero + 20;
     line-height: $all-zero + 26;
@@ -93,3 +100,4 @@ p {
     font-family: $bauhaus-font-family;
     letter-spacing: $all-zero + 2;
 }
+
