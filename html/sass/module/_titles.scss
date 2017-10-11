@@ -17,7 +17,7 @@
     }
     &.c-title--border-top {
         @extend .c-title--border-bottom;
-        padding: $all-zero + 5 $all-zero $all-zero;
+        padding: $all-zero + 10 $all-zero $all-zero + 5;
         &:after {
             top: $all-zero;
         }

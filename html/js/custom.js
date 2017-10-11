@@ -14,6 +14,13 @@ var swiper2 = new Swiper('.swiper2', {
     paginationClickable: true,
     slidesPerView: 2,
 });
+var swiper3 = new Swiper('.swiper3', {
+    zoom: true,
+    pagination: '.swiper-pagination3',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+});
 
 
 (function($){

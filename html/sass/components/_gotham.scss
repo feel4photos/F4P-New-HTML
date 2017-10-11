@@ -4,7 +4,7 @@
     src: url('#{$gotham-font-path}GothamThin.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamThin.woff') format('woff'),
         url('#{$gotham-font-path}GothamThin.ttf') format('truetype');
-    font-weight: 100;
+    font-weight: $font-thin;
     font-style: normal;
 }
 
@@ -14,7 +14,7 @@
     src: url('#{$gotham-font-path}GothamThin-Italic.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamThin-Italic.woff') format('woff'),
         url('#{$gotham-font-path}GothamThin-Italic.ttf') format('truetype');
-    font-weight: 100;
+    font-weight: $font-thin;
     font-style: italic;
 }
 
@@ -24,7 +24,7 @@
     src: url('#{$gotham-font-path}Gotham-Light.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}Gotham-Light.woff') format('woff'),
         url('#{$gotham-font-path}Gotham-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: $font-light;
     font-style: normal;
 }
 
@@ -34,7 +34,7 @@
     src: url('#{$gotham-font-path}GothamLight-Italic.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamLight-Italic.woff') format('woff'),
         url('#{$gotham-font-path}GothamLight-Italic.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: $font-light;
     font-style: italic;
 }
 
@@ -44,7 +44,7 @@
     src: url('#{$gotham-font-path}GothamMedium.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamMedium.woff') format('woff'),
         url('#{$gotham-font-path}GothamMedium.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: $font-medium;
     font-style: normal;
 }
 
@@ -54,7 +54,7 @@
     src: url('#{$gotham-font-path}GothamMedium-Italic.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamMedium-Italic.woff') format('woff'),
         url('#{$gotham-font-path}GothamMedium-Italic.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: $font-medium;
     font-style: italic;
 }
 
@@ -84,7 +84,7 @@
     src: url('#{$gotham-font-path}GothamBlack.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamBlack.woff') format('woff'),
         url('#{$gotham-font-path}GothamBlack.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: $font-black;
     font-style: normal;
 }
 
@@ -94,7 +94,7 @@
     src: url('#{$gotham-font-path}GothamBlack-Italic.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamBlack-Italic.woff') format('woff'),
         url('#{$gotham-font-path}GothamBlack-Italic.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: $font-black;
     font-style: italic;
 }
 
@@ -104,7 +104,7 @@
     src: url('#{$gotham-font-path}GothamUltra.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamUltra.woff') format('woff'),
         url('#{$gotham-font-path}GothamUltra.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: $font-black;
     font-style: normal;
 }
 
@@ -114,7 +114,7 @@
     src: url('#{$gotham-font-path}GothamUltra-Italic.eot?#iefix') format('embedded-opentype'),
         url('#{$gotham-font-path}GothamUltra-Italic.woff') format('woff'),
         url('#{$gotham-font-path}GothamUltra-Italic.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: $font-black;
     font-style: italic;
 }
 
