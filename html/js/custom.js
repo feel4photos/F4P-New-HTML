@@ -21,6 +21,13 @@ var swiper3 = new Swiper('.swiper3', {
     prevButton: '.swiper-button-prev',
     paginationClickable: true,
 });
+var swiper4 = new Swiper('.swiper4', {
+    zoom: true,
+    pagination: '.swiper-pagination4',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+});
 
 
 (function($){
