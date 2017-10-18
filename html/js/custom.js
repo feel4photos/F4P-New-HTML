@@ -1,4 +1,4 @@
-
+// swiper slider
 var swiper = new Swiper('.swiper1', {
     zoom: true,
     pagination: '.swiper-pagination1',
@@ -27,6 +27,36 @@ var swiper4 = new Swiper('.swiper4', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     paginationClickable: true,
+});
+
+
+// click to scroll down
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
+});
+
+// scroll to top
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn(1000);
+        }else{
+            $('#scroll').fadeOut(1000);
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 1500);
+        return false;
+    });
 });
 
 
