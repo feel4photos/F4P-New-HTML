@@ -309,7 +309,7 @@ button.btn-floating {
 }
 
 .c-btn--borderadius {
-    @include border-radius(50px);
+    @include border-radius($all-zero + 50);
 }
 
 .c-btn--nobg {
@@ -323,6 +323,7 @@ button.btn-floating {
     &.c-arrowbtn--scrolltop {
         left: $all-zero + 20;
         bottom: $all-zero + 20;
+        z-index: 100;
     }
 }
 

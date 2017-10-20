@@ -29,6 +29,13 @@
             @include translateX(-$f4p-grid-width-100 /2);
         }
     }
+    &.c-title--border-right {
+        @extend .c-title--border-bottom;
+        &:after {
+            left: inherit;
+            right: $all-zero;
+        }
+    }
     &.c-title--border-base-color {
         &:after {
             background-color: $f4p-base-color;

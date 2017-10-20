@@ -134,6 +134,10 @@ i {
 }
 
 // Images
+img {
+    display: block;
+}
+
 img.responsive-img,
 video.responsive-video {
   max-width: 100%;

@@ -8,6 +8,25 @@
             top: 15%;
         }
     }
+    .o-related-post {
+
+        &__titles {
+            bottom: $all-zero + 50;
+            left: $all-zero + 30;
+            right: $all-zero + 30;
+            header {
+                &:after {
+                    background-color: $f4p-hlight-tone;
+                    bottom: $all-zero - 50;
+                    content: "";
+                    height: $f4p-grid-height-100 / 2;
+                    left: $all-zero - 30;
+                    position: absolute;
+                    width: $all-zero + 4;
+                }
+            }
+        }
+    }
 }
 
 

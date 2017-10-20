@@ -9,7 +9,7 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <header class="o-header c-header u-height100 u-relative valign-wrapper parallax-container">
+    <header class="o-header c-header u-height100 u-relative valign-wrapper parallax-container" role="main-header">
         <section class="u-absolute c-brand">
             <div class="u-relative">
                 <a href="index.html" id="logo-container" class="o-logo left-align white-text" title="Feel4photos">
@@ -44,14 +44,47 @@
         </section><!-- blog page banner -->
     </header><!-- / header -->
     <section class="o-content c-content" id="first-fold">
-        <section class="o-hlight u-topbottom-pad-50 center-align">
-            <h3 class="c-title u-uppercase white-text c-title--border-middle c-title--border-bottom c-title--border-base-color c-title--type3 u-no-topmargin">Stay in touch</h3>
-            <section class="c-social">
-                <a href="javascript:void(0);" class="u-linkbase social facebook"><i class="fa fa-facebook"></i></a>
-                <a href="javascript:void(0);" class="u-linkbase social twitter"><i class="fa fa-twitter"></i></a>
-                <a href="javascript:void(0);" class="u-linkbase social instagram"><i class="fa fa-instagram"></i></a>
-            </section><!-- stay in touch social icon -->
-        </section><!-- / stay in touch -->
+
+        <section class="o-hlight u-width100 u-topbottom-pad-50 white-text valign-wrapper">
+            <section class="container">
+                <section class="row u-no-margin u-right-pad u-left-pad">
+                    <div class="col s12 l4 hide-on-med-and-down left-align">
+                        <h3 class="c-title c-title--border-bottom c-title--border-base-color u-uppercase u-no-topmargin">Categories</h3>
+                        <div class="o-catgrylist u-linkbase u-smallcaps u-width80">
+                            <ul class="u-no-margin">
+                                <li><a href="javascript:void(0);">Fashion</a>,</li>
+                                <li><a href="javascript:void(0);">Gourmet</a>,</li>
+                                <li><a href="javascript:void(0);">Travel</a>,</li>
+                                <li><a href="javascript:void(0);">Product</a>,</li>
+                                <li><a href="javascript:void(0);">Garments</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- / categories -->
+                    <div class="col s12 l4 center-align">
+                        <h3 class="c-title u-uppercase c-title--border-middle c-title--border-bottom c-title--border-base-color c-title--type3 u-no-topmargin">Stay in touch</h3>
+                        <section class="c-social">
+                            <a href="javascript:void(0);" class="u-linkbase social facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="javascript:void(0);" class="u-linkbase social twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="javascript:void(0);" class="u-linkbase social instagram"><i class="fa fa-instagram"></i></a>
+                        </section><!-- / stay in touch social icon -->
+                    </div><!-- / stay in touch -->
+                    <div class="col s12 l4 hide-on-med-and-down right-align">
+                        <h3 class="c-title c-title--border-right c-title--border-bottom c-title--border-base-color u-uppercase u-no-topmargin">Archive</h3>
+                        <div class="o-catgrylist u-linkbase u-smallcaps u-width80 right">
+                            <ul class="u-no-margin">
+                                <li><a href="javascript:void(0);">archive 01</a>,</li>
+                                <li><a href="javascript:void(0);">archive 02</a>,</li>
+                                <li><a href="javascript:void(0);">archive 03</a>,</li>
+                                <li><a href="javascript:void(0);">archive 04</a>,</li>
+                                <li><a href="javascript:void(0);">archive 05</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- / archive -->
+                </section><!-- / row for categories stay in touch archive -->
+            </section><!-- / categories stay in touch archive -->
+        </section>
+
+
         <section class="o-listarticles">
             <article class="container u-width100 o-article o-article--single">
                 <section class="row u-no-margin">
@@ -136,6 +169,23 @@
                         <img src="images/blog-bg.jpg" alt="" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle">
                     </div>
                 </section>
+                <section class="row u-no-margin">
+                    <section class="col s12 l12 no-padding">
+                        <div class="card container u-margin-0auto">
+                            <div class="u-topbottom-pad-50 u-left-pad u-right-pad">
+                                <div class="card-content">
+                                    <div class="o-article__desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div><!-- / excerpt -->
+                                </div>
+                                <div class="card-action no-padding">
+
+                                </div><!-- / permalink -->
+                            </div>
+                        </div><!-- / blog content -->
+                    </section><!-- / single content and sub image -->
+                </section>
                 <section></section><!-- / posted in and share post -->
             </article><!-- / single article area -->
             <section class="row u-no-margin o-related-posts">
@@ -152,15 +202,15 @@
                         <article class="col s12 m12 l4 o-related-post white-text left-align swiper-slide u-relative">
                             <section class="swiper-zoom-container">
                                 <div class="card-image u-relative">
-                                    <div class="card-action u-absolute u-top-0 u-right-0 c-social c-social--related-post">
+                                    <div class="card-action u-absolute u-top-0 u-right-0 c-social c-social--related-post o-related-post__social">
                                         <a href="javascript:void(0);" class="u-linkbase social facebook"><i class="fa fa-facebook"></i></a>
                                         <a href="javascript:void(0);" class="u-linkbase social twitter"><i class="fa fa-twitter"></i></a>
                                         <a href="javascript:void(0);" class="u-linkbase social instagram"><i class="fa fa-instagram"></i></a>
                                     </div><!-- / relatd post social -->
-                                    <img src="images/blog-bg.jpg" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle"><!-- / related post feature image -->
-                                    <div class="card-content u-absolute u-left-0 u-bot-0">
-                                        <header>
-                                            <h2 class="c-title o-related-post__title">
+                                    <img src="images/blog-bg.jpg" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle o-related-post__fimg"><!-- / related post feature image -->
+                                    <div class="card-content u-absolute u-left-0 u-bot-0 o-related-post__titles left-align">
+                                        <header class="u-relative">
+                                            <h2 class="c-title o-related-post__title u-no-margin">
                                                 <span class="c-title c-title--border-bottom c-title--border-base-color">
                                                     <span class="c-title u-bauhaus-ffamily u-smallertxt">
                                                         Garments
@@ -172,18 +222,62 @@
                                                 Indo Western Outdoor
                                             </h2>
                                         </header>
-                                    </div>
+                                    </div><!-- / related post titles -->
                                 </div>
                             </section>
                         </article><!-- / single related post -->
-                        <article class="col s12 m12 l4 o-related-post swiper-slide u-relative">
+                        <article class="col s12 m12 l4 o-related-post white-text left-align swiper-slide u-relative">
                             <section class="swiper-zoom-container">
-                                hello2
+                                <div class="card-image u-relative">
+                                    <div class="card-action u-absolute u-top-0 u-right-0 c-social c-social--related-post o-related-post__social">
+                                        <a href="javascript:void(0);" class="u-linkbase social facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="javascript:void(0);" class="u-linkbase social twitter"><i class="fa fa-twitter"></i></a>
+                                        <a href="javascript:void(0);" class="u-linkbase social instagram"><i class="fa fa-instagram"></i></a>
+                                    </div><!-- / relatd post social -->
+                                    <img src="images/blog-bg2.jpg" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle o-related-post__fimg"><!-- / related post feature image -->
+                                    <div class="card-content u-absolute u-left-0 u-bot-0 o-related-post__titles left-align">
+                                        <header class="u-relative">
+                                            <h2 class="c-title o-related-post__title u-no-margin">
+                                                <span class="c-title c-title--border-bottom c-title--border-base-color">
+                                                    <span class="c-title u-bauhaus-ffamily u-smallertxt">
+                                                        Garments
+                                                    </span>
+                                                    <span class="c-title u-smallertxt">
+                                                        Dec 26, 2017
+                                                    </span>
+                                                </span>
+                                                Indo Western Outdoor
+                                            </h2>
+                                        </header>
+                                    </div><!-- / related post titles -->
+                                </div>
                             </section>
                         </article><!-- / single related post -->
-                        <article class="col s12 m12 l4 o-related-post swiper-slide u-relative">
+                        <article class="col s12 m12 l4 o-related-post white-text left-align swiper-slide u-relative">
                             <section class="swiper-zoom-container">
-                                hello3
+                                <div class="card-image u-relative">
+                                    <div class="card-action u-absolute u-top-0 u-right-0 c-social c-social--related-post o-related-post__social">
+                                        <a href="javascript:void(0);" class="u-linkbase social facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="javascript:void(0);" class="u-linkbase social twitter"><i class="fa fa-twitter"></i></a>
+                                        <a href="javascript:void(0);" class="u-linkbase social instagram"><i class="fa fa-instagram"></i></a>
+                                    </div><!-- / relatd post social -->
+                                    <img src="images/background1.jpg" class="u-height100 u-width100 u-objfit-cover u-obj-pos-center-middle o-related-post__fimg"><!-- / related post feature image -->
+                                    <div class="card-content u-absolute u-left-0 u-bot-0 o-related-post__titles left-align">
+                                        <header class="u-relative">
+                                            <h2 class="c-title o-related-post__title u-no-margin">
+                                                <span class="c-title c-title--border-bottom c-title--border-base-color">
+                                                    <span class="c-title u-bauhaus-ffamily u-smallertxt">
+                                                        Garments
+                                                    </span>
+                                                    <span class="c-title u-smallertxt">
+                                                        Dec 26, 2017
+                                                    </span>
+                                                </span>
+                                                Indo Western Outdoor
+                                            </h2>
+                                        </header>
+                                    </div><!-- / related post titles -->
+                                </div>
                             </section>
                         </article><!-- / single related post -->
                     </div>
@@ -345,7 +439,7 @@
             </section><!-- / gm fixed width container -->
         </section><!-- / newsletter subscription -->
     </section><!-- / main content area -->
-    <footer class="o-dark c-footer u-height100 u-topbottom-pad-50 u-left-pad u-right-pad valign-wrapper u-bauhaus-ffamily">
+    <footer class="o-dark c-footer u-height100 u-topbottom-pad-50 u-left-pad u-right-pad valign-wrapper u-bauhaus-ffamily" role="main-footer">
         <section class="container">
             <div class="c-footer__logo u-footer-gap">
                 <a href="javascript:void(0);" title="Feel4photos">
