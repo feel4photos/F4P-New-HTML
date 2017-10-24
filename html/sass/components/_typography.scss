@@ -24,6 +24,12 @@ html{
   color: $off-black;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ html {
+        font-weight: $font-normal;
+    }
+}
+
 // Header Styles
 h1, h2, h3, h4, h5, h6 { font-family: $gotham-font-family; font-weight: $font-medium;
 line-height: 1.1;}
