@@ -60,6 +60,31 @@ $(document).ready(function(){
 });
 
 
+// page preloader
+$(document).ready(function(){
+   /***** Element 1 *****/
+        // Initialize Progress and show LoadingOverlay
+        var progress1 = new LoadingOverlayProgress();
+        $(".o-whole").LoadingOverlay("show", {
+            custom  : progress1.Init()
+        });
+        // Simulate some action:
+        var count1  = 0;
+        var iid1    = setInterval(function(){
+            if (count1 >= 100) {
+                clearInterval(iid1);
+                delete progress1;
+                $(".o-whole").LoadingOverlay("hide");
+                return;
+            }
+            count1++;
+            progress1.Update(count1);
+        }, 100);
+    /*********************/
+});
+
+
+
 (function($){
   $(function(){
 
