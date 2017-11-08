@@ -84,6 +84,12 @@ $(document).ready(function(){
 });
 
 
+// site preloader
+$(document).ready(function(){
+    $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+});
+
+
 
 (function($){
   $(function(){
