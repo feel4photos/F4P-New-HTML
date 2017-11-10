@@ -19,7 +19,8 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         "minSize"           : "20px",
         "resizeInterval"    : 50,
         "size"              : "50%",
-        "zIndex"            : 2147483647
+        //"zIndex"            : 2147483647
+        "zIndex"            : 214748364
     };
 
     $.LoadingOverlaySetup = function(settings){

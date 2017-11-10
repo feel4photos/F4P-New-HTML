@@ -89,6 +89,12 @@ $(document).ready(function(){
     $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
 });
 
+// site preloader fade out
+$(document).ready(function() { // makes sure the whole site is loaded
+    $('.o-site-preloader').delay(15000).fadeOut(2000); // will first fade out the loading animation
+    $('body').delay(3500).css({'overflow':'visible'});
+});
+
 
 
 (function($){

@@ -24,13 +24,12 @@
 // site preloader
 
 .o-site-preloader {
-    background-color: #000;
+    background-color: $black;
     bottom: 0;
     left: 0;
     right: 0;
     top:0;
-    z-index: 9999999999 !important;
-    position: absolute;
+    z-index: 9999999999;
 }
 
 .os-phrases {
