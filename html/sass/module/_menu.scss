@@ -4,6 +4,112 @@
 
 }
 
+.o-header {
+    .o-mainnav-list {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+        z-index: 1000;
+    }
+    .open {
+        opacity: 1;
+        visibility: visible;
+    }
+    .c-header__nav {
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                align-items: center;
+                flex: 1;
+                line-height: 20vh;
+                a {
+            font-size: 1.5em;
+                    transition: all 0.5s ease;
+                    display: block;
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, .5);
+                    &:hover {
+                        color: rgba(255, 255, 255, .9);
+                        transform: scale(1.1);
+                        &:before {
+                            visibility: visible;
+                            transform: scaleX(1);
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 50%;
+                        height: 2px;
+                        bottom: 0;
+                        left: 25%;
+                        background: white;
+                        visibility: hidden;
+                        transform: scaleX(0);
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 600px) {
+      .c-header__nav ul li a {
+        font-size: 3em;
+      }
+    }
+
+    .close {
+        position: fixed;
+        top: 40px;
+        right: 60px;
+        color: white;
+        z-index: 3;
+        cursor: pointer;
+        font-family: sans-serif;
+      span,
+      span:before,
+      span:after {
+        border-radius: 4px;
+        height: 5px;
+        width: 35px;
+        background: white;
+        position: absolute;
+        display: block;
+        content: '';
+        }
+      span {
+            background: transparent;
+        }
+      span:before {
+            transform: rotate(45deg);
+        }
+      span:after {
+            transform: rotate(-45deg);
+        }
+    }
+    .outer-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 85px;
+        height: 85px;
+        cursor: pointer;
+    }
+}
+
+
 .c-footer__nav {
     background-color: $transparent;
     height: auto;

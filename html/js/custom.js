@@ -96,6 +96,15 @@ $(document).ready(function() { // makes sure the whole site is loaded
 });
 
 
+// menu overlay
+(function($) {
+    $(function() {
+    $('.toggle-overlay').click(function() {
+        $('.o-mainnav-list').toggleClass('open');
+        });
+    });
+})(jQuery);
+
 
 (function($){
   $(function(){
@@ -117,3 +126,8 @@ $(document).ready(function() { // makes sure the whole site is loaded
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+
+
+
+
