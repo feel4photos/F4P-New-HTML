@@ -16,6 +16,9 @@
         transition: all .5s ease;
         z-index: 1000;
     }
+    .o-search-box {
+        @extend .o-mainnav-list;
+    }
     .open {
         opacity: 1;
         visibility: visible;

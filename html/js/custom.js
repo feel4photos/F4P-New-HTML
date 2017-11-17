@@ -105,6 +105,15 @@ $(document).ready(function() { // makes sure the whole site is loaded
     });
 })(jQuery);
 
+// search box overlay
+(function($) {
+    $(function() {
+    $('.search-overlay').click(function() {
+        $('.o-search-box').toggleClass('open');
+        });
+    });
+})(jQuery);
+
 
 (function($){
   $(function(){
