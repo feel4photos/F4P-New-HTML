@@ -248,8 +248,9 @@ $gutter-width: 1.5rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
 
-$f4p-grid-height-100: 100vh !default;
 $f4p-grid-width-100: 100% !default;
+$f4p-grid-height-100vh: 100vh !default;
+$f4p-grid-height-100: $f4p-grid-width-100 !default;
 
 
 // 13. Navigation Bar
