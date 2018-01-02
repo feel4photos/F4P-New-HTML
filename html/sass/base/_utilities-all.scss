@@ -203,6 +203,14 @@
 }
 
 
+// transition
+.u-transition-all {
+    @include transition('ease-in-out');
+    @include transition-property('all');
+    @include transition-duration(400ms);
+}
+
+
 // link color
 .u-linkhlight {
     color: $f4p-hlight-tone;

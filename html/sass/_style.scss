@@ -14,16 +14,16 @@
 @import "layout/related-posts";
 
 // F4P module
-@import "module/menu";
-@import "module/social";
-@import "module/titles";
-@import "module/swiper";
-@import "module/preloader";
+@import "module/menu/menu";
+@import "module/social/social";
+@import "module/titles/titles";
+@import "module/preloader/preloader";
 
 // F4P module fontawesome
 @import "module/icon/font-awesome";
 
 // F4P module slider
+@import "module/slider/swiper";
 @import "module/slider/slick";
 @import "module/slider/slick-theme";
 @import "module/slider/slider";
