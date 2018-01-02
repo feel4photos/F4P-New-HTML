@@ -136,14 +136,12 @@ i {
 }
 
 // Images
-img {
-    display: block;
-}
-
+img,
 img.responsive-img,
 video.responsive-video {
-  max-width: 100%;
-  height: auto;
+    display: block;
+    height: auto;
+    max-width: $f4p-grid-width-100;
 }
 
 

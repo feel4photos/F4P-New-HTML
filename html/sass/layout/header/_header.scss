@@ -1,11 +1,13 @@
 // F4P header partial
 
 .c-brand {
-    left: $all-zero + 30;
-    right: $all-zero + 30;
-    top: $all-zero + 30;
+    left: $all-zero + 50;
+    right: $all-zero + 50;
+    top: $all-zero + 50;
     z-index: 6;
+    &__cta {
+        @extend .right;
+        @extend .u-display-in-block;
+    }
 }
-.o-logo {
 
-}
