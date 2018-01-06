@@ -2,6 +2,10 @@
 
 .c-menu {
     @extend %u-box-shadow-no;
+    a {
+        @extend .u-linkbase;
+        @extend .u-display-in-block;
+    }
 }
 
 .o-header {
@@ -16,6 +20,7 @@
         @extend .center-align;
         @extend .u-height100;
         @extend .u-valign-middle;
+        letter-spacing: $all-zero + 2;
         opacity: 0;
         visibility: hidden;
         z-index: 1000;
@@ -44,24 +49,22 @@
         flex-direction: column;
         justify-content: center;
         ul {
+            line-height: 1;
             li {
                 align-items: center;
                 flex: 1;
+                margin-bottom: $all-zero + 15;
                 @extend .u-display-block;
                 @extend %u-no-float;
                 a {
+                    font-size: $body-font-size * 3.5;
                     @extend .u-transition-all;
-                    &:hover {
-                        color: rgba(255, 255, 255, .9);
-                    }
+                }
+                &:last-child {
+                    @extend .u-no-botmargin;
                 }
             }
         }
-    }
-    @media screen and (min-width: 600px) {
-      .c-header__nav ul li a {
-        font-size: 3em;
-      }
     }
 
     .close {
@@ -94,39 +97,34 @@
         }
     }
     .outer-close {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 85px;
-        height: 85px;
+        @extend .u-absolute;
+        @extend .u-right-0;
+        @extend .u-top-0;
+        width: $all-zero + 85;
+        height: $all-zero + 85;
         cursor: pointer;
     }
 }
 
 
 .c-footer__nav {
-    background-color: $transparent;
     height: auto;
     line-height: inherit;
-    overflow: hidden;
     width: auto;
-    ul {
-        a {
-            padding: $all-zero;
-        }
-    }
+    @extend %u-bg-color-trans;
+    @extend .u-oflowhidden;
     li {
         margin-bottom: $all-zero + 4;
         padding-right: $all-zero + 25;
-        position: relative;
+        @extend .u-relative;
         &:before {
             content: "\002f";
-            position: absolute;
             right: $all-zero + 10;
+            @extend .u-absolute;
         }
         &:last-child {
             &:before {
-                display: none;
+                @extend .u-display-none;
             }
         }
         &.active {

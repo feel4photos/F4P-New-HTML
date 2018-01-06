@@ -2,7 +2,14 @@
 
 footer {
     p {
-        margin: $all-zero;
+        @extend .u-no-margin;
+    }
+}
+
+.c-footer {
+    &__copyright {
+        font-size: $all-zero + 12;
+        margin: $all-zero + 15 $all-zero;
     }
 }
 
@@ -10,7 +17,3 @@ footer {
     margin-bottom: $all-zero + 25;
 }
 
-.c-footer__copyright {
-    font-size: $all-zero + 12;
-    margin: $all-zero + 15 $all-zero;
-}
