@@ -1,7 +1,20 @@
 
 
+.u-bauhaus-ffamily {
+    font-family: $bauhaus-font-family;
+    letter-spacing: $all-zero + 2;
+}
+.u-gotham-ffamily {
+    font-family: $gotham-font-family;
+}
+
+.u-timesnwrman-ffamily {
+    font-family: $timesnwroman-font-family;
+}
+
 a {
   text-decoration: none;
+  @extend .u-transition-all;
 }
 
 html{
@@ -31,7 +44,7 @@ html{
 }
 
 // Header Styles
-h1, h2, h3, h4, h5, h6 { font-family: $gotham-font-family; font-weight: $font-medium;
+h1, h2, h3, h4, h5, h6 { @extend .u-gotham-ffamily; font-weight: $font-medium;
 line-height: 1.1;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 
@@ -80,7 +93,7 @@ p {
 
 // Quoted text
 .u-quotetxt {
-    font-family: $timesnwroman-font-family;
+    @extend .u-timesnwrman-ffamily;
     font-size: $all-zero + 16;
     padding-bottom: $all-zero + 10 !important;
 }
@@ -108,10 +121,5 @@ p {
         }
     }
 }
-.u-bauhaus-ffamily {
-    font-family: $bauhaus-font-family;
-    letter-spacing: $all-zero + 2;
-}
-
 
 

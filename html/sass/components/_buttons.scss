@@ -322,8 +322,11 @@ button.btn-floating {
     }
     &--scrolltop {
         bottom: $all-zero + 30;
-        right: $all-zero + 50;
+        right: $all-zero + 30;
         z-index: 100;
+        @media #{$large-and-up} {
+            right: $all-zero + 50;
+        }
     }
 }
 

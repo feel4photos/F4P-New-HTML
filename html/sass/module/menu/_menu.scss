@@ -5,64 +5,54 @@
 }
 
 .o-header {
-    .o-mainnav-list {
+    .o-header-ovrlay {
         @extend .u-fixed;
         @extend .u-width100;
-        @extend .u-height100-prcnt;
+        //@extend .u-height100-prcnt;
         @extend .u-top-0;
         @extend .u-left-0;
         @extend .u-transition-all;
+        @extend .o-dark;
+        @extend .center-align;
+        @extend .u-height100;
+        @extend .u-valign-middle;
         opacity: 0;
         visibility: hidden;
         z-index: 1000;
+        &__inner {
+            @extend .u-valign-middle-inner;
+            @extend .left-align;
+            @extend .u-gotham-ffamily;
+            padding: $all-zero $f4p-grid-width-100 / 12;
+            width: $f4p-grid-width-100 / 2;
+            &:last-child {
+                @extend .right-align;
+                @extend .u-timesnwrman-ffamily;
+            }
+        }
     }
     .o-search-box {
-        @extend .o-mainnav-list;
+
     }
     .open {
         opacity: 1;
         visibility: visible;
     }
     .c-header__nav {
-        @extend .o-dark;
-        @extend .center-align;
-        @extend .u-height100;
+        @extend %u-bg-color-trans;
         display: flex;
         flex-direction: column;
         justify-content: center;
         ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
             li {
                 align-items: center;
                 flex: 1;
-                line-height: 20vh;
+                @extend .u-display-block;
+                @extend %u-no-float;
                 a {
-                    font-size: 1.5em;
-                    transition: all 0.5s ease;
-                    display: block;
-                    text-decoration: none;
-                    color: rgba(255, 255, 255, .5);
+                    @extend .u-transition-all;
                     &:hover {
                         color: rgba(255, 255, 255, .9);
-                        transform: scale(1.1);
-                        &:before {
-                            visibility: visible;
-                            transform: scaleX(1);
-                        }
-                    }
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        width: 50%;
-                        height: 2px;
-                        bottom: 0;
-                        left: 25%;
-                        background: white;
-                        visibility: hidden;
-                        transform: scaleX(0);
-                        transition: all 0.3s ease-in-out 0s;
                     }
                 }
             }
@@ -137,6 +127,11 @@
         &:last-child {
             &:before {
                 display: none;
+            }
+        }
+        &.active {
+            a {
+                opacity: 0.4;
             }
         }
     }
