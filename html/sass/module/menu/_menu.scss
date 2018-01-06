@@ -6,14 +6,14 @@
 
 .o-header {
     .o-mainnav-list {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
+        @extend .u-fixed;
+        @extend .u-width100;
+        @extend .u-height100-prcnt;
+        @extend .u-top-0;
+        @extend .u-left-0;
+        @extend .u-transition-all;
         opacity: 0;
         visibility: hidden;
-        transition: all .5s ease;
         z-index: 1000;
     }
     .o-search-box {
@@ -24,8 +24,9 @@
         visibility: visible;
     }
     .c-header__nav {
-        text-align: center;
-        height: 100vh;
+        @extend .o-dark;
+        @extend .center-align;
+        @extend .u-height100;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -38,7 +39,7 @@
                 flex: 1;
                 line-height: 20vh;
                 a {
-            font-size: 1.5em;
+                    font-size: 1.5em;
                     transition: all 0.5s ease;
                     display: block;
                     text-decoration: none;

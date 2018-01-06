@@ -252,13 +252,15 @@ video.responsive-video {
 
     img {
       display: none;
+      height: inherit;
       position: absolute;
       left: 50%;
       bottom: 0;
+      max-width: inherit;
       min-width: 100%;
       min-height: 100%;
       -webkit-transform: translate3d(0,0,0);
-              transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
       transform: translateX(-50%);
     }
   }
@@ -743,18 +745,5 @@ td, th{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.no-padding {
-  padding: $all-zero !important;
-}
-.u-no-margin {
-  margin: $all-zero !important;
-}
-.u-no-topmargin {
-  margin-top: $all-zero !important;
-}
-.u-no-botmargin {
-  margin-bottom: $all-zero !important;
 }
 

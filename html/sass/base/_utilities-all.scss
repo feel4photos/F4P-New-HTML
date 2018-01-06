@@ -47,6 +47,7 @@
 
 
 // padding
+
 .u-topbottom-pad-50 {
     padding: $all-zero + 50 $all-zero;
 }
@@ -56,8 +57,22 @@
 .u-right-pad {
     padding-right: $all-zero + 30;
 }
+.u-no-padding {
+  padding: $all-zero !important;
+}
+
 
 // margin
+
+.u-no-margin {
+  margin: $all-zero !important;
+}
+.u-no-topmargin {
+  margin-top: $all-zero !important;
+}
+.u-no-botmargin {
+  margin-bottom: $all-zero !important;
+}
 
 // block element center alignment
 .u-margin-0auto {
@@ -172,7 +187,7 @@
 
 // position
 .u-absolute {
-    position: absolute !important;
+    position: absolute;
     &.u-top-0 {
         top: $all-zero;
     }
@@ -196,6 +211,7 @@
     position: relative;
 }
 .u-fixed {
+    @extend .u-absolute;
     position: fixed;
 }
 
@@ -210,7 +226,7 @@
 .u-transition-all {
     @include transition('ease-in-out');
     @include transition-property('all');
-    @include transition-duration(400ms);
+    @include transition-duration(500ms);
 }
 
 

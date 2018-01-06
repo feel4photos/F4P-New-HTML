@@ -317,12 +317,12 @@ button.btn-floating {
 }
 
 .c-arrowbtn {
-    &.c-arrowbtn--banner {
+    &--banner {
         bottom: $all-zero + 30;
     }
-    &.c-arrowbtn--scrolltop {
-        left: $all-zero + 20;
-        bottom: $all-zero + 20;
+    &--scrolltop {
+        bottom: $all-zero + 30;
+        right: $all-zero + 50;
         z-index: 100;
     }
 }
