@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 // site preloader fade out
 $(document).ready(function() { // makes sure the whole site is loaded
-    $('.o-site-preloader').delay(15000).fadeOut(2000); // will first fade out the loading animation
+    $('.o-site-preloader').delay(12000).fadeOut(2000); // will first fade out the loading animation
     $('body').delay(3500).css({'overflow':'visible'});
 });
 

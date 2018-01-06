@@ -34,17 +34,25 @@
 
 .os-phrases {
     h2 {
-        font-size: 70px;
-        width: 100%;
-        overflow: hidden;
-        text-transform: uppercase;
-        position: absolute;
-        top: 0;
-        left: 0;
-        letter-spacing: 14px;
-        text-align: center;
-
-        height: 100%;
+        font-size: $body-font-size - 4;
+        letter-spacing: $all-zero + 8;
+        @extend .u-width100;
+        @extend .u-oflowhidden;
+        @extend .u-uppercase;
+        @extend .u-absolute;
+        @extend .u-top-0;
+        @extend .u-left-0;
+        @extend .center-align;
+        @extend .u-height100-prcnt;
+            @media #{$iphone-landscape-and-up} {
+                font-size: $body-font-size;
+            }
+            @media #{$large-and-up} {
+                font-size: $body-font-size * 2.5;
+            }
+            @media #{$extra-large-and-up} {
+                font-size: $body-font-size * 4;
+            }
         /* Centering with flexbox */
         display: -webkit-box;
         display: -moz-box;
@@ -130,13 +138,13 @@
 @-webkit-keyframes OpeningSequence {
     0% {
         text-shadow: 0 0 50px #fff;
-        letter-spacing: 80px;
+        letter-spacing: 50px;
         opacity: 0;
         -webkit-transform: rotateY(-90deg);
     }
     50% {
         text-shadow: 0 0 1px #fff;
-        letter-spacing: 14px;
+        letter-spacing: $all-zero + 8;
         opacity: 0.8;
         -webkit-transform: rotateY(0deg);
     }
@@ -156,13 +164,13 @@
 @-moz-keyframes OpeningSequence {
     0% {
         text-shadow: 0 0 50px #fff;
-        letter-spacing: 80px;
+        letter-spacing: 50px;
         opacity: 0.2;
         -moz-transform: rotateY(-90deg);
     }
     50% {
         text-shadow: 0 0 1px #fff;
-        letter-spacing: 14px;
+        letter-spacing: $all-zero + 8;
         opacity: 0.8;
         -moz-transform: rotateY(0deg);
     }
@@ -182,13 +190,13 @@
 @keyframes OpeningSequence {
     0% {
         text-shadow: 0 0 50px #fff;
-        letter-spacing: 80px;
+        letter-spacing: 50px;
         opacity: 0.2;
         transform: rotateY(-90deg);
     }
     50% {
         text-shadow: 0 0 1px #fff;
-        letter-spacing: 14px;
+        letter-spacing: $all-zero + 8;
         opacity: 0.8;
         transform: rotateY(0deg);
     }

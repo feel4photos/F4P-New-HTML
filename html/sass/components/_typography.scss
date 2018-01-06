@@ -8,15 +8,15 @@ html{
   line-height: 1.5;
 
   @media only screen and (min-width: 0) {
-    font-size: $all-zero + 14;
+    font-size: $body-font-size;
   }
 
   @media only screen and (min-width: $medium-screen) {
-    font-size: $all-zero + 14.5;
+    font-size: $body-font-size + 1;
   }
 
   @media only screen and (min-width: $large-screen) {
-    font-size: $all-zero + 15;
+    font-size: $body-font-size + 2;
   }
 
   font-family: $srcsanspro-font-family;
