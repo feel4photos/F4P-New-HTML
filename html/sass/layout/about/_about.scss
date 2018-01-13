@@ -9,8 +9,7 @@
     }
     &__hcontent {
         @media #{$large-and-up} {
-            padding-left: $all-zero + 50;
-            padding-right: $all-zero + 50;
+            padding: $all-zero + 130 $all-zero + 50;
         }
     }
 }

@@ -59,9 +59,9 @@
 }
 .u-topbottom-pad-50 {
     padding: $all-zero + 50 $all-zero;
-    @media #{$large-and-up} {
-        padding: $all-zero + 130 $all-zero;
-    }
+    // @media #{$large-and-up} {
+    //     padding: $all-zero + 130 $all-zero;
+    // }
 }
 .u-left-pad {
     padding-left: $all-zero + 30;
