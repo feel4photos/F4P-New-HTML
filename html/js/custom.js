@@ -115,6 +115,16 @@ $(document).ready(function() { // makes sure the whole site is loaded
 })(jQuery);
 
 
+jQuery(window).load(function() {
+  equalheight('.c-equalhght');
+});
+
+
+jQuery(window).resize(function(){
+  equalheight('.c-equalhght');
+});
+
+
 (function($){
   $(function(){
 

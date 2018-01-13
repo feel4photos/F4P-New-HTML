@@ -1,0 +1,20 @@
+// F4P about partial
+
+.c-about {
+    &__inner {
+        @media #{$large-and-up} {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    &__hcontent {
+        @media #{$large-and-up} {
+            padding-left: $all-zero + 50;
+            padding-right: $all-zero + 50;
+        }
+    }
+}
+
+
+
+
