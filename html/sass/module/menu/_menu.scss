@@ -28,11 +28,18 @@
             @extend .u-valign-middle-inner;
             @extend .left-align;
             @extend .u-gotham-ffamily;
-            padding: $all-zero $f4p-grid-width-100 / 12;
-            width: $f4p-grid-width-100 / 2;
+            padding: $all-zero + 50;
+            width: $f4p-grid-width-100;
+            @media #{$large-and-up} {
+                padding: $all-zero $f4p-grid-width-100 / 12;
+                width: $f4p-grid-width-100 / 2;
+            }
             &:last-child {
-                @extend .right-align;
+                @extend .left-align;
                 @extend .u-timesnwrman-ffamily;
+                @media #{$large-and-up} {
+                    text-align: right;
+                }
             }
         }
     }
@@ -57,8 +64,11 @@
                 @extend .u-display-block;
                 @extend %u-no-float;
                 a {
-                    font-size: $body-font-size * 3.5;
+                    font-size: $body-font-size * 2.5 + 5;
                     @extend .u-transition-all;
+                    @media #{$large-and-up} {
+                        font-size: $body-font-size * 3.5;
+                    }
                 }
                 &:last-child {
                     @extend .u-no-botmargin;
