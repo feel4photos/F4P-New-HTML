@@ -153,6 +153,15 @@ jQuery(window).resize(function(){
 })(jQuery);
 
 
+// headroom
+// grab an element
+var myElement = document.querySelector("section.o-brand");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init();
+
+
 // wow animation
 wow = new WOW(
     {

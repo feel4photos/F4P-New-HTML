@@ -16,6 +16,7 @@ gulp.task('f4pjs', function() {
         'js/equal-height.js',
         'js/wow.js',
         'js/jquery.swipebox.js',
+        'js/headroom.js',
         'js/custom.js'
     ])
     .pipe(plumber())
