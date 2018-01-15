@@ -11,6 +11,8 @@
     }
     &.c-social--bottom {
         bottom: $all-zero + 90;
+        @extend .u-width100;
+        @extend .center-align;
     }
     &.c-social--bloglist {
         margin-top: $all-zero + 20;

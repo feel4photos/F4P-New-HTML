@@ -7,6 +7,38 @@
             a {
                 @extend .u-display-block;
                 @extend .u-height100-prcnt;
+                @extend .u-relative;
+                @extend .center-align;
+                &:before {
+                    @extend .u-absolute;
+                    @extend .u-translate-50;
+                    @extend .u-transition-all;
+                    color: $white;
+                    content: "\f055";
+                    font-family: 'FontAwesome';
+                    font-size: $body-font-size;
+                    opacity: 0;
+                    z-index: 5;
+                }
+                span {
+                    @extend .u-absolute;
+                    @extend .u-all-0;
+                    @extend .u-transition-all;
+                    @extend .u-display-block;
+                    background-color: rgba(229, 103, 86, 0.5);
+                    opacity: 0;
+                    z-index: 4;
+                }
+
+                &:hover {
+                    &:before {
+                        font-size: $body-font-size * 3.5;
+                        opacity: 1;
+                    }
+                    span {
+                        opacity: 1;
+                    }
+                }
             }
             img {
                 @extend .u-display-block;

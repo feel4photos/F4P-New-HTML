@@ -147,6 +147,12 @@ jQuery(window).resize(function(){
 })(jQuery); // end of jQuery name space
 
 
+// swipe box
+(function($) {
+    $('.swipebox').swipebox();
+})(jQuery);
+
+
 // wow animation
 wow = new WOW(
     {
@@ -160,6 +166,7 @@ wow = new WOW(
     }
 );
 wow.init();
+
 
 
 

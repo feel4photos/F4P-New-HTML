@@ -1,0 +1,21 @@
+{
+  "name": "feel4photos",
+  "version": "1.0.0",
+  "description": "the feel of photography",
+  "main": "index.js",
+  "scripts": {
+    "test": "shoot & shoot to take better"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feel4photos/F4P-New-HTML"
+  },
+  "author": "feel4photos (http://feel4photos.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-install": "^1.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
