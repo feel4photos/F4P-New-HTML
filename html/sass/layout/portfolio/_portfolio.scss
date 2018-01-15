@@ -1,0 +1,24 @@
+// F4P portfolio partial
+
+.c-portfolio {
+    &--desktop {
+        article {
+            height: $f4p-grid-height-100vh / 2;
+            a {
+                @extend .u-display-block;
+                @extend .u-height100-prcnt;
+            }
+            img {
+                @extend .u-display-block;
+                @extend .u-height100-prcnt;
+                @extend .u-objfit-cover;
+                @extend .u-obj-pos-center-middle;
+                @extend .u-width100;
+            }
+        }
+    }
+}
+
+
+
+

@@ -147,6 +147,20 @@ jQuery(window).resize(function(){
 })(jQuery); // end of jQuery name space
 
 
+// wow animation
+wow = new WOW(
+    {
+        animateClass: 'animated',
+        mobile:       true,
+        live:         true,
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+    }
+);
+wow.init();
+
 
 
 
